@@ -1,0 +1,28 @@
+/*------------------------------*
+*レイアウトに関するscssモジュール
+*------------------------------*/
+/* メインボディのレイアウト */
+.mainBody {
+    margin-top: 5rem;
+    margin-left: 20rem;
+}
+
+/* サイドバーのレイアウトデザイン */
+.sideBar {
+    display: none;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    z-index: 101;
+    height: 100%;
+    background-color: rgba($sideBarColor, $sideBarAlpha);
+}
+
+/* ヘッダーのレイアウトデザイン */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba($sideBarColor, $sideBarAlpha);
+    width: 100%;
+}

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/*---------------------------------* 
+ *ここをコンパイルしてhtmlに読み込ませる
+ *--------------------------------*/
+/*------------------------------*
+*リセットscssモジュール
+*------------------------------*/
+html {
+  font-size: 62.5%; }
+  html body {
+    font-size: 1.3rem;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0; }
+    html body ul {
+      list-style: none; }
+      html body ul li {
+        list-style: none; }
+    html body h1 {
+      margin: 0;
+      font-size: 2.5rem; }
+    html body h2 {
+      margin: 0;
+      font-size: 2rem; }
+    html body h3 {
+      margin: 0;
+      font-size: 1.5rem; }
+
+/*---------------------------*
+ * 変数定義
+ *---------------------------*/
+/*------------------------------*
+*レイアウトに関するscssモジュール
+*------------------------------*/
+/* メインボディのレイアウト */
+.mainBody {
+  margin-top: 5rem;
+  margin-left: 20rem; }
+
+/* サイドバーのレイアウトデザイン */
+.sideBar {
+  display: none;
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  z-index: 101;
+  height: 100%;
+  background-color: rgba(129, 247, 159, 0.5); }
+
+/* ヘッダーのレイアウトデザイン */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(129, 247, 159, 0.5);
+  width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
