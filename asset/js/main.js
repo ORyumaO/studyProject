@@ -1,27 +1,50 @@
 const APP = {
-  // サイドバーの表示・非表示のJS
-  getSwitchClass: document.getElementById('sideBarSwitch'),
+  // 定数管理プロパティ
+  state: {
 
+  },
+
+  // サイドバーを出す関数
   openSideBar: function () {
-    var target = document.getElementsByClassName('sideBar')
-    var addStyle = target[0].style
+    var self = APP,
+      target = document.getElementsByClassName('sideBar'),
+      addStyle = target[0].style
     target[0].classList.add('active')
     addStyle.display = 'block'
   },
 
+  // サイドバーをしまう関数
   closeSideBar: function () {
-    var target = document.getElementsByClassName('sideBar')
-    var addStyle = target[0].style
+    var self = APP,
+      target = document.getElementsByClassName('sideBar'),
+      addStyle = target[0].style
     target[0].classList.remove('active')
     addStyle.display = 'none'
   },
-}
-switchSideBar =  function () {
-  var checkContains = document.getElementsByClassName('sideBar')[0].classList.contains('active')
-  if (checkContains) {
-    APP.closeSideBar()
+
+  // サイドバーの状態によってイベントをハンドルする関数
+  switchSideBar: function (e) {
+    var self = APP,
+      checkContains = document.getElementsByClassName('sideBar')[0].classList.contains('active')
+    if (checkContains) {
+      self.closeSideBar()
     } else {
-    APP.openSideBar()
+      self.openSideBar()
+    }
+  },
+
+  // DOM作成するやつ
+  volumeFieldDisplay: function () {
+    var self = APP,
+      checkValiation = document.getElementsByName('valiation'),
+      volumeField = document.getElementsByClassName('volume_field');
+
+    if (checkValiation.value === 'game') {
+      volumeField[0].style.display = 'block'
+    } else {
+      volumeField[0].style.display = 'none'
+    }
   }
 }
-APP.getSwitchClass.addEventListener('click', switchSideBar);
+document.getElementById('sideBarSwitch').addEventListener('click', APP.switchSideBar);
+document.getElementById('game').addEventListener('change', APP.volumeFieldDisplay)

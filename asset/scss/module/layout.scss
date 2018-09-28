@@ -26,3 +26,8 @@
     background-color: rgba($sideBarColor, $sideBarAlpha);
     width: 100%;
 }
+
+/* 巻数の表示を消す */
+.volume_field { 
+    display: none;
+}

@@ -55,4 +55,8 @@ html {
   background-color: rgba(129, 247, 159, 0.5);
   width: 100%; }
 
+/* 巻数の表示を消す */
+.volume_field {
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */

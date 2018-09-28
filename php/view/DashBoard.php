@@ -5,12 +5,12 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>DashBoard</title>
-		<?php include(__DIR__ . '/../loadfile/stylesheetLink.html');?>
+		<?php include(__DIR__ . '/../../loadfile/stylesheetLink.html');?>
 	</head>
 
 	<body>
-		<?php include(__DIR__ . '/../loadfile/header.php');?>
-		<?php include(__DIR__ . '/../loadfile/sidebar.php');?>
+		<?php include(__DIR__ . '/../../loadfile/header.php');?>
+		<?php include(__DIR__ . '/../../loadfile/sidebar.php');?>
 		<main class="mainBody">
 			<div class="book">
 				<h3>本・漫画関係</h3>
@@ -49,7 +49,7 @@
 				</div>
 			</div>
 		</main>
-		<?php include(__DIR__ . '/../loadfile/javascriptLink.html');?>
+		<?php include(__DIR__ . '/../../loadfile/javascriptLink.html');?>
 	</body>
 
 </html>
